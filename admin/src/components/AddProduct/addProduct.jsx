@@ -43,6 +43,7 @@ function AddProduct() {
                 method:'POST',
                 headers:{
                     Accept:'application/json',
+                    'auth-token':`${localStorage.getItem('auth-token')}`,
                     'Content-Type':'application/json'
                 },
                 body:JSON.stringify(product)
@@ -57,6 +58,10 @@ function AddProduct() {
             <div className="addproduct-itemfield">
                 <p>Product title</p>
                 <input type="text" value={productDetails.name} onChange={changeHandler} name='name' placeholder='Type here' />
+            </div>
+            <div className="addproduct-itemfield">
+                <p>Product Description</p>
+                <input type="text" value={productDetails.description} onChange={changeHandler} name='description' placeholder='Type here' />
             </div>
             <div className="addproduct-price">
                 <div className="addproduct-itemfield">
@@ -78,7 +83,7 @@ function AddProduct() {
             </div>
             <div className="addproduct-itemfield">
                 <label htmlFor="file-input">
-                    <img src={image?URL.createObjectURL(image):upload_area} className='addproduct-thumnail-immg' alt="" />
+                    <img src={image?URL.createObjectURL(image):upload_area} className='addproduct-thumnail-img' alt="" />
                 </label>
                 <input type="file" onChange={imageHandler} name='image' id='file-input' hidden />
             </div>

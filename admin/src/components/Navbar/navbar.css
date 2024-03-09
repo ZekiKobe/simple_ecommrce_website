@@ -3,11 +3,19 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 60px;
-    box-shadow: 0 1px 2px -2px #000;
-    background: white;
+    box-shadow: 2 1px 2px 2px #000;
+    background: rgb(6, 3, 44);
+    margin-bottom: 1px;
 }
-.nav-logo{
-    width: 200px;
+.logo-container{
+    display: flex;
+}
+.logo-container h1{
+    color: white;
+}
+.menu-icon{
+    margin-top: 40px;
+    margin-left: 40px;
 }
 .nav-profile{
     width: 75px;

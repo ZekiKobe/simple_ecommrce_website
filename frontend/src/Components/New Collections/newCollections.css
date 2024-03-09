@@ -6,7 +6,7 @@
     margin-bottom: 100px;
 }
 .new-collections h1{
-    color: #171717;
+    color: white;
     font-size: 50px;
     font-weight: 600;
 }
@@ -17,10 +17,11 @@
     color: #252525;
 }
 .collections{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 50px;
-    gap: 30px;
+        margin-top: 50px;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 
@@ -64,13 +65,14 @@
     }
     .collections{
         gap: 5px;
+        grid-template-columns: 2fr 2fr;
     }
 }
 
 @media(max-width:500px){
 .collections{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2px;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
 }
 }

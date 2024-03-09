@@ -1,21 +1,23 @@
 .news-letter{
-    width: 65%;
+    width: auto;
     height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding: 0px 140px;
     margin-bottom: 150px;
-    background: linear-gradient(180deg,white,#7348BA 60%);
+    background: linear-gradient(180deg,#073157,#9194a6 60%);
     gap: 30px;
+    background-image: url('../Assets/ex_bg.jpg');
+    background-attachment: fixed;
 
 }
 .news-letter h1{
-    color: #454545;
+    color: cyan;
     font-size: 55px;
-    font-weight: 600;
+    font-weight: 700;
+    text-decoration-color: #073157;
 }
 .news-letter p{
     color: white;

@@ -46,7 +46,7 @@ const HomeContextProvider = (props) => {
           'auth-token':`${localStorage.getItem('auth-token')}`,
           'Content-Type':'application/json'
         },
-        body:JSON.stringify({"itemId":itemId})
+        body:JSON.stringify({"itemId":itemId}),
       })
       .then((response)=>response.json())
       .then((data)=>console.log(data))
@@ -72,15 +72,20 @@ const HomeContextProvider = (props) => {
   const getTotalCartAmount = () => {
     let totalAmount = 0;
     for (const item in cartItems) {
-      if (cartItems[item] > 0) {
-        let itemInfo = all_product.find(
-          (product) => product.id === Number(item)
-        )
-        totalAmount +=  itemInfo.new_price * cartItems[item];
-      }
-      return totalAmount;
+        if (cartItems[item] > 0) {
+            let itemInfo = all_product.find((product) => product.id === Number(item));
+            // Add a null check to ensure itemInfo is not undefined
+            if (itemInfo && itemInfo.new_price) {
+                totalAmount += itemInfo.new_price * cartItems[item];
+            } else {
+                console.error(`Product with ID ${item} not found or does not have a valid price.`);
+            }
+        }
     }
-  } 
+    return totalAmount;
+}
+
+
 
   const getTotalCartItems = ()=>{
     let totalItem = 0;
@@ -98,7 +103,7 @@ const HomeContextProvider = (props) => {
     cartItems,
     addToCart,
     removeFromCart,
-    getTotalCartItems
+    getTotalCartItems,
   };
 
   return (

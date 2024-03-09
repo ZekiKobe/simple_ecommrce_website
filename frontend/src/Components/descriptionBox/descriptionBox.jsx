@@ -9,7 +9,7 @@ function DescriptionBox() {
                     Desccription
                 </div>
                 <div className="descriptionBox-nav-box fade">
-                        Reviews{122}
+                        Reviews
                     </div>
             </div>
             <div className="descriptionBox-description">

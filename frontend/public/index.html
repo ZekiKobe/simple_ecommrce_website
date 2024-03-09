@@ -10,6 +10,7 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <script src="https://js.stripe.com/v3/"></script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -42,5 +43,9 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+      const stripe = Stripe('pk_test_51OnGlMKW10USdtx6siG6uAaAJr5KcArZbiN4CTL1P8hMVU5gDFhkr5YxHrYIRSMW9ZsMa7pqLZcgH6Mvl8C3lQDM00yhhmRDW0');
+    </script>
   </body>
 </html>

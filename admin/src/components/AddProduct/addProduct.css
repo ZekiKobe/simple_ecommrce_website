@@ -38,9 +38,9 @@
       border-radius: 4px;
       margin-bottom: 10px;
 }
-.add-product-thumnail-img{
-    height: 120px;
-    width: 120px;
+.addproduct-thumnail-img{
+    height: 160px;
+    width: 160px;
     border-radius: 10px;
     object-fit: contain;
     margin: 10px 0px;

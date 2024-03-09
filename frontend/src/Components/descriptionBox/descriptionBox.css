@@ -12,19 +12,20 @@
     font-weight: 600;
     width: 171px;
     height: 70px;
-    border: 1px solid #d0d0d0;
+    border: 1px solid #6373b2;
+    color: white;
 }
 .descriptionBox-nav-box.fade{
-background: #FBFBFB;
-color: #555;
+color: white;
 }
 .descriptionBox-description{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    border: 1px solid #D0D0D0;
+    border: 1px solid #5a73b2;
     padding: 48px;
     padding-bottom: 70px;
+    color: white;
 }
 
 @media(max-width:1280px){

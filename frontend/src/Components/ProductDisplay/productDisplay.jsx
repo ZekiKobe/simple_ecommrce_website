@@ -7,6 +7,7 @@ import { HomeContext } from '../../Context/homeContext'
 function ProductDisplay(props) {
     const {product} = props;
     const {addToCart} = useContext(HomeContext);
+
     return (
         <div className="product-display">
             <div className="product-display-left">
@@ -36,21 +37,21 @@ function ProductDisplay(props) {
                     </div>
                 </div>
                 <div className="product-display-right-description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium inventore, dolorem suscipit molestias labore debitis officiis, dicta perspiciatis ratione ipsum, a rem unde corrupti aut dolore minus! Quae, aperiam esse.
+                    {product?.description}
                 </div>
                 <div className="productdisplay-right-size">
-                    <h1>Select size</h1>
+                    <h1>Select Type</h1>
                     <div className="productdisplay-right-sizes">
-                        <div>one</div>
-                        <div>two</div>
-                        <div>three</div>
-                        <div>four</div>
-                        <div>five</div>
+                        <div>Tables</div>
+                        <div>Bed</div>
+                        <div>Sofa</div>
+                        <div>Chairs</div>
+                        <div>Group Tables</div>
                     </div>
                 </div>
                 <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
-                <p className='productdisplay-right-category'><span>Category :</span>dwedgjewhf efvhejwgfwje ewfgew</p>
-                <p className='productdisplay-right-category'><span>Category :</span>dwedgjewhf efvhejwgfwje ewfgew</p>
+                <p className='productdisplay-right-category'><span>Category : {product?.category}</span></p>
+                
             </div>
         </div>
     )

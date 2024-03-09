@@ -8,7 +8,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: poppins;
+  font-family: 'poppins';
+  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,42,101,1) 36%, rgba(37,86,96,1) 100%);
 }
 
 code {

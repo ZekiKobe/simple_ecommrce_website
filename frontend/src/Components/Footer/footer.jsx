@@ -11,7 +11,7 @@ function Footer() {
        <div className="footer">
         <div className="footer-logo">
             <img src={footer_logo} alt="" />
-            <p>ECOMMERCE</p>
+            <p>Kobe Furniture</p>
         </div>
         <ul className="footer-links">
             <li>Company</li>
@@ -34,7 +34,7 @@ function Footer() {
         </div>
         <div className="footer-copyright">
             <hr />
-            <p>Copyright @2023 - All rights reserved</p>
+            <p style={{color:'white'}}>Copyright @2023 - All rights reserved</p>
         </div>
        </div> 
     )
