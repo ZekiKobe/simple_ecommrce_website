@@ -1,16 +1,19 @@
 .news-letter{
-    width: auto;
-    height: 40vh;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
     margin-bottom: 150px;
-    background: linear-gradient(180deg,#073157,#9194a6 60%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,42,101,1) 36%, rgba(37,86,96,1) 100%);
     gap: 30px;
-    background-image: url('../Assets/ex_bg.jpg');
-    background-attachment: fixed;
+    box-shadow: 1px 1px 1px 1px white;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-radius: 10px;
+    /*background-image: url('../Assets/ex_bg.jpg');*/
+    /* background-attachment: fixed; */
 
 }
 .news-letter h1{

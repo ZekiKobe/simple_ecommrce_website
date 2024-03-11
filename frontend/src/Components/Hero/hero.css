@@ -47,6 +47,12 @@
     font-weight: 500;
 
 }
+.hero-latest-btn:hover{
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 1s ease;
+    border: 1px solid cyan;
+}
 .hero-right{
     flex:1;
     display: flex;

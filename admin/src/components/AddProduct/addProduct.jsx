@@ -76,6 +76,7 @@ function AddProduct() {
             <div className="addproduct-itemfield">
                 <p>Product Category</p>
                 <select name="category" value={productDetails.category} onChange={changeHandler} className='add-product-selector'>
+                    <option value="">---select--</option>
                     <option value="wood">Wood</option>
                     <option value="metal">Metal</option>
                     <option value="sofa">Sofa</option>

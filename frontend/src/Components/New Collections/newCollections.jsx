@@ -11,7 +11,7 @@ function NewCollections() {
       .then((data) => setNewCollections(data));
   }, []);
   return (
-    <div className="new-collections">
+    <div className="new-collections" id="newcollections">
       <h1>Recent Products</h1>
       <hr />
       <div className="collections">

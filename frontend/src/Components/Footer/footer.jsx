@@ -1,9 +1,11 @@
 import React from 'react'
 import './footer.css'
 import footer_logo from '../Assets/logo_big.png'
-import instagram_icon from '../Assets/instagram_icon.png'
-import whatsup_icon from '../Assets/whatsapp_icon.png'
-import pinterest_icon from '../Assets/pintester_icon.png'
+import instagram_icon from '../Assets/instagram.svg'
+import whatsup_icon from '../Assets/whatsup.svg'
+import linkedin_icon from '../Assets/linkedin.svg'
+import telegram_icon from '../Assets/telegram.svg';
+import facebook_icon from '../Assets/facebook.svg';
 
 
 function Footer() {
@@ -29,7 +31,13 @@ function Footer() {
                 <img src={whatsup_icon} alt="" />
             </div>
             <div className="footer-icon-container">
-                <img src={pinterest_icon} alt="" />
+                <img src={linkedin_icon} alt="" />
+            </div>
+            <div className="footer-icon-container">
+                <img src={facebook_icon} alt="" />
+            </div>
+            <div className="footer-icon-container">
+                <img src={telegram_icon} alt="" />
             </div>
         </div>
         <div className="footer-copyright">

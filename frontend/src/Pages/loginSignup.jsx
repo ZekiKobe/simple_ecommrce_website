@@ -232,7 +232,7 @@ function LoginSignup() {
               }}
             >
               {" "}
-              Click here
+              Signup here
             </span>
           </p>
         )}
